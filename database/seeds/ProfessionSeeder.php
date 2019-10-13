@@ -33,7 +33,7 @@ class ProfessionSeeder extends Seeder
             'title'=>'Ingeniero de Sistemas',
         ]);
 
-        factory(Profession::class)->times(16)->create([
+        factory(Profession::class)->times(6)->create([
 
         ]);
 

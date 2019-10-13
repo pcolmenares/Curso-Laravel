@@ -45,15 +45,39 @@ class UserController extends Controller
     }
     public function show($id)
     {
-        $user=User::find($id);
+
+//        $user=User::find($id);
        //dd($user);
+//        if($user==null){
+//            return response()->view('errors.404', [], 404);
+//
+//        }
+        $user=User::findOrFail($id);
+
         return view('users.detail',[
             'user'=> $user,
         ]);
     }
+//La funcion anterior se puede simplificar de la siguiente forma:
+//    public function show(User $user){
+//        //dd($user);
+//        return view('users.detail',compact('user'));
+//    }
     public function create()
     {
-        return view('users.create');
+        return view('users.new');
+    }
+    public function store()
+    {
+        $data=request()->all();
+
+        //dd($data);
+        User::create([
+            'name'=>$data['name'],
+            'email'=>$data['email'],
+            'password'=>bcrypt($data['password']),
+        ]);
+        return redirect()->route('users.index');
     }
 
 }

@@ -11,7 +11,7 @@
             @foreach($users as $user)
                 <li>
                     {{$user->name}}
-                    <a href="{{route('user.details',['id'=>$user->id])}}">Ver Detalles</a>
+                    <a href="{{route('users.details',['id'=>$user->id])}}">Ver Detalles</a>
                 </li>
             @endforeach
         </ul>

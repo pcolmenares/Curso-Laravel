@@ -10,5 +10,5 @@
             <li>Profesion: {{$user->profession->title}}</li>
 
     </ul>
-    <p><a href="{{route('user.index')}}"> Regresar</a></p>
+    <p><a href="{{route('users.index')}}"> Regresar</a></p>
 @endsection

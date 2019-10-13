@@ -28,9 +28,24 @@
                 font-size: 3.5rem;
             }
         }
+        body{
+            padding-top: 70px;
+        }
     </style>
     <!-- Custom styles for this template -->
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Curso Laravel</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="{{route('users.index')}}">Usuarios <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="{{route('users.new')}}">Crear</a>
+            </div>
+        </div>
+    </nav>
 </head>
 <body class="d-flex flex-column h-100">
 <header>

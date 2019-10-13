@@ -18,7 +18,7 @@ use Illuminate\Support\Str;
 
 $factory->define(User::class, function (Faker $faker) {
     return [
-       'profession_id'=>$faker->numberBetween($min = 1, $max = 20),
+       'profession_id'=>$faker->numberBetween($min = 1, $max = 10),
         'name' => $faker->name,
         'email' => $faker->unique()->safeEmail,
         'email_verified_at' => now(),

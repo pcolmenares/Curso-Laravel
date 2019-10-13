@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0de4664b-b070-4a5b-afdb-fbaf19b2502f" name="Default Changelist" comment="" />
+    <list default="true" id="0de4664b-b070-4a5b-afdb-fbaf19b2502f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +25,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/mi-proyecto" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.2">
     <include_path>
@@ -117,15 +120,21 @@
   <component name="ProjectId" id="1RigUGHLZry8xmtB31EK2oVWHUK" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/users" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\mi-proyecto\resources\views\users" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\mi-proyecto\resources\views\errors" />
+      <recent name="C:\laragon\www\mi-proyecto\resources\views" />
       <recent name="C:\laragon\www\mi-proyecto\resources\views\users" />
     </key>
   </component>
@@ -141,23 +150,46 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.phpunit.xml">
+  <component name="RunManager" selected="PHPUnit.UsersModuleTest.it_create_a_new_user">
     <configuration name="UsersModuleTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\UsersModuleTest" file="$PROJECT_DIR$/tests/Feature/UserModuleTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="UsersModuleTest.it_create_a_new_user" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\UsersModuleTest" file="$PROJECT_DIR$/tests/Feature/UserModuleTest.php" method="it_create_a_new_user" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="UsersModuleTest.it_displays_the_user_details" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\UsersModuleTest" file="$PROJECT_DIR$/tests/Feature/UserModuleTest.php" method="it_displays_the_user_details" scope="Method" />
       <method v="2" />
     </configuration>
+    <configuration name="UsersModuleTest.it_loads_the_new_users_page" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\UsersModuleTest" file="$PROJECT_DIR$/tests/Feature/UserModuleTest.php" method="it_loads_the_new_users_page" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="UsersModuleTest.muestra_mensaje_si_la_lista_esta_vacia" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\UsersModuleTest" file="$PROJECT_DIR$/tests/Feature/UserModuleTest.php" method="muestra_mensaje_si_la_lista_esta_vacia" scope="Method" />
+      <method v="2" />
+    </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="PHPUnit.phpunit.xml" />
+      <item itemvalue="PHPUnit.UsersModuleTest" />
+      <item itemvalue="PHPUnit.UsersModuleTest.it_displays_the_user_details" />
+      <item itemvalue="PHPUnit.UsersModuleTest.it_loads_the_new_users_page" />
+      <item itemvalue="PHPUnit.UsersModuleTest.muestra_mensaje_si_la_lista_esta_vacia" />
+      <item itemvalue="PHPUnit.UsersModuleTest.it_create_a_new_user" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.UsersModuleTest.it_create_a_new_user" />
         <item itemvalue="PHPUnit.UsersModuleTest.it_displays_the_user_details" />
+        <item itemvalue="PHPUnit.UsersModuleTest.muestra_mensaje_si_la_lista_esta_vacia" />
         <item itemvalue="PHPUnit.UsersModuleTest" />
+        <item itemvalue="PHPUnit.UsersModuleTest.it_loads_the_new_users_page" />
       </list>
     </recent_temporary>
   </component>
@@ -173,7 +205,8 @@
       <updated>1570155349890</updated>
       <workItem from="1570155394353" duration="761000" />
       <workItem from="1570230421547" duration="48918000" />
-      <workItem from="1570474456279" duration="14179000" />
+      <workItem from="1570474456279" duration="15338000" />
+      <workItem from="1570826747328" duration="21680000" />
     </task>
     <servers />
   </component>

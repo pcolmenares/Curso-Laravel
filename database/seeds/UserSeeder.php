@@ -67,14 +67,14 @@ class UserSeeder extends Seeder
             'is_admin' =>true,
         ]);
         factory(User::class)->create([
-            'profession_id'=>4,
+            'profession_id'=>$professionId,
             'name'=>'Jessica Noria',
             'email'=>'jessnoria@gmail.com',
             'password'=>bcrypt('2603'),
             'is_admin' =>true,
         ]);
 
-        factory(User::class,48)->create([
+        factory(User::class,8)->create([
         ]);
 
     }

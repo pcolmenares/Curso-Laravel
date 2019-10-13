@@ -30,7 +30,7 @@ class UsersModuleTest extends TestCase
             ->assertSee('Cristobal Gonzalez')
             ->assertSee('Listado de Usuarios');
     }
-
+    /** @test */
     function muestra_mensaje_si_la_lista_esta_vacia()
     {
         $this->get('/usuarios')
@@ -52,12 +52,46 @@ class UsersModuleTest extends TestCase
             ->assertStatus(200)
             ->assertSee('Pedro Colmenares');
     }
+    /** @test */
+    function it_displays_404_error_if_user_is_not_found()
+    {
+
+        $this->get('/usuarios/9999')
+            ->assertStatus(404)
+            ->assertSee('Usuario no encontrado');
+    }
 
     /** @test */
     function it_loads_the_new_users_page()
     {
         $this->get('/usuarios/nuevo')
             ->assertStatus(200)
-            ->assertSee('Crear nuevo usuario');
+            ->assertSee('Crear Usuario');
+    }
+
+    /** @test */
+    function it_create_a_new_user(){
+
+       // $this->withExceptionHandling();
+        $this->post(route('users.store'),[
+            'name'=>'Pedro Colmenares',
+            'email'=>'9a5e697fed-a05a34@inbox.mailtrap.io',
+            'password'=>'colmena3611',
+        ])->assertRedirect(route('users.index'));
+
+
+        $this->assertCredentials([
+            'name'=>'Pedro Colmenares',
+            'email'=>'9a5e697fed-a05a34@inbox.mailtrap.io',
+            'password'=>'colmena3611',
+        ]);
+
+        //Para verificar los datos insertados en la base de datos se usa la forma siguiente. El problema sucede cuando se
+        // insertan contrasenas con bcrypt que no va a verificar correctamente porque este helper crea contrasenas cada ves que se invoca
+//        $this->assertDatabaseHas('users',[
+//            'name'=>'Pedro Colmenares',
+//            'email'=>'9a5e697fed-a05a34@inbox.mailtrap.io',
+//            //'password'=>'colmena3611',
+//        ])->assertRedirect(route('users.index'));
     }
 }

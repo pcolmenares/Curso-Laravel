@@ -14,15 +14,19 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/usuarios','UserController@index')->name('user.index');
+Route::get('/usuarios','UserController@index')->name('users.index');
 
+//Route::get('/usuarios/{user}','UserController@show')
+//        ->where('user','[0-9]+')
+//        ->name('user.details');
 Route::get('/usuarios/{id}','UserController@show')
         ->where('id','[0-9]+')
-        ->name('user.details');
+        ->name('users.details');
 
-Route::get('/usuarios/nuevo', 'UserController@create')->name('user.create');
+Route::get('/usuarios/nuevo', 'UserController@create')->name('users.new');
+Route::post('/usuarios/crear','UserController@store')->name('users.store');
 
-Route::get('/saludo/{name}/{nickname?}', 'WelcomeUserController@index')->name('user.welcome');
+Route::get('/saludo/{name}/{nickname?}', 'WelcomeUserController@index')->name('users.welcome');
 
 Auth::routes();
 
