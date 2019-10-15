@@ -21,6 +21,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -133,6 +134,7 @@
       <recent name="C:\laragon\www\mi-proyecto\resources\views\users" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\mi-proyecto\public\js" />
       <recent name="C:\laragon\www\mi-proyecto\resources\views\errors" />
       <recent name="C:\laragon\www\mi-proyecto\resources\views" />
       <recent name="C:\laragon\www\mi-proyecto\resources\views\users" />
@@ -150,25 +152,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.UsersModuleTest.it_create_a_new_user">
-    <configuration name="UsersModuleTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\UsersModuleTest" file="$PROJECT_DIR$/tests/Feature/UserModuleTest.php" scope="Class" />
+  <component name="RunManager" selected="PHPUnit.UsersModuleTest.it_delete_a_user">
+    <configuration name="UsersModuleTest.it_delete_a_user" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\UsersModuleTest" file="$PROJECT_DIR$/tests/Feature/UserModuleTest.php" method="it_delete_a_user" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="UsersModuleTest.it_create_a_new_user" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\UsersModuleTest" file="$PROJECT_DIR$/tests/Feature/UserModuleTest.php" method="it_create_a_new_user" scope="Method" />
+    <configuration name="UsersModuleTest.the_email_is_not_unique_update" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\UsersModuleTest" file="$PROJECT_DIR$/tests/Feature/UserModuleTest.php" method="the_email_is_not_unique_update" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="UsersModuleTest.it_displays_the_user_details" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\UsersModuleTest" file="$PROJECT_DIR$/tests/Feature/UserModuleTest.php" method="it_displays_the_user_details" scope="Method" />
+    <configuration name="UsersModuleTest.the_email_must_be_unique_when_updating_the_user" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\UsersModuleTest" file="$PROJECT_DIR$/tests/Feature/UserModuleTest.php" method="the_email_must_be_unique_when_updating_the_user" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="UsersModuleTest.it_loads_the_new_users_page" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\UsersModuleTest" file="$PROJECT_DIR$/tests/Feature/UserModuleTest.php" method="it_loads_the_new_users_page" scope="Method" />
+    <configuration name="UsersModuleTest.the_password_is_optional_update" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\UsersModuleTest" file="$PROJECT_DIR$/tests/Feature/UserModuleTest.php" method="the_password_is_optional_update" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="UsersModuleTest.muestra_mensaje_si_la_lista_esta_vacia" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\UsersModuleTest" file="$PROJECT_DIR$/tests/Feature/UserModuleTest.php" method="muestra_mensaje_si_la_lista_esta_vacia" scope="Method" />
+    <configuration name="UsersModuleTest.the_users_email_can_stay_the_same_when_updating_the_user" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\UsersModuleTest" file="$PROJECT_DIR$/tests/Feature/UserModuleTest.php" method="the_users_email_can_stay_the_same_when_updating_the_user" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -177,21 +179,26 @@
     </configuration>
     <list>
       <item itemvalue="PHPUnit.phpunit.xml" />
-      <item itemvalue="PHPUnit.UsersModuleTest" />
-      <item itemvalue="PHPUnit.UsersModuleTest.it_displays_the_user_details" />
-      <item itemvalue="PHPUnit.UsersModuleTest.it_loads_the_new_users_page" />
-      <item itemvalue="PHPUnit.UsersModuleTest.muestra_mensaje_si_la_lista_esta_vacia" />
-      <item itemvalue="PHPUnit.UsersModuleTest.it_create_a_new_user" />
+      <item itemvalue="PHPUnit.UsersModuleTest.the_email_is_not_unique_update" />
+      <item itemvalue="PHPUnit.UsersModuleTest.the_password_is_optional_update" />
+      <item itemvalue="PHPUnit.UsersModuleTest.the_email_must_be_unique_when_updating_the_user" />
+      <item itemvalue="PHPUnit.UsersModuleTest.the_users_email_can_stay_the_same_when_updating_the_user" />
+      <item itemvalue="PHPUnit.UsersModuleTest.it_delete_a_user" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="PHPUnit.UsersModuleTest.it_create_a_new_user" />
-        <item itemvalue="PHPUnit.UsersModuleTest.it_displays_the_user_details" />
-        <item itemvalue="PHPUnit.UsersModuleTest.muestra_mensaje_si_la_lista_esta_vacia" />
-        <item itemvalue="PHPUnit.UsersModuleTest" />
-        <item itemvalue="PHPUnit.UsersModuleTest.it_loads_the_new_users_page" />
+        <item itemvalue="PHPUnit.UsersModuleTest.it_delete_a_user" />
+        <item itemvalue="PHPUnit.UsersModuleTest.the_email_must_be_unique_when_updating_the_user" />
+        <item itemvalue="PHPUnit.UsersModuleTest.the_email_is_not_unique_update" />
+        <item itemvalue="PHPUnit.UsersModuleTest.the_users_email_can_stay_the_same_when_updating_the_user" />
+        <item itemvalue="PHPUnit.UsersModuleTest.the_password_is_optional_update" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="StructuralSearchPlugin">
+    <searchConfiguration name="user defined" created="1570929471140" text="new" recursive="true" caseInsensitive="true" type="PHP" scope_type="NAMED" scope_descriptor="All Places" history="1">
+      <constraint name="__context__" within="" contains="" />
+    </searchConfiguration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -206,7 +213,8 @@
       <workItem from="1570155394353" duration="761000" />
       <workItem from="1570230421547" duration="48918000" />
       <workItem from="1570474456279" duration="15338000" />
-      <workItem from="1570826747328" duration="21680000" />
+      <workItem from="1570826747328" duration="71542000" />
+      <workItem from="1571097589474" duration="3189000" />
     </task>
     <servers />
   </component>

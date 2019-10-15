@@ -74,7 +74,7 @@ class UserSeeder extends Seeder
             'is_admin' =>true,
         ]);
 
-        factory(User::class,8)->create([
+        factory(User::class,40)->create([
         ]);
 
     }
